@@ -143,7 +143,7 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task3.V28
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormMain";
-            this.Text = "Спринт 6 | Таск 3 | Вариант 28 |  Варова А. А.";
+            this.Text = "Спринт 6 | Таск 3 | Вариант 28 |  Платонова П.Е.";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxTask_VAA.ResumeLayout(false);
             this.groupBoxTask_VAA.PerformLayout();
