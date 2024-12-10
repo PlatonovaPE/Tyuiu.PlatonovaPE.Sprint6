@@ -183,7 +183,7 @@
             
             MinimumSize = new Size(1400, 700);
             Name = "FormMain";
-            Text = "Спринт 6 | Таск 4 | Вариант 16 | Коробейникова Д.Д.";
+            Text = "Спринт 6 | Таск 4 | Вариант 16 | Платонова П.Е.";
             Load += FormMain_Load;
           ;
             groupBox1.ResumeLayout(false);
