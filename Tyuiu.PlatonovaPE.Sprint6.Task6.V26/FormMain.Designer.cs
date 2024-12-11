@@ -1,5 +1,4 @@
-﻿
-namespace Tyuiu.PlatonovaPE.Sprint6.Task6.V26
+﻿namespace Tyuiu.PlatonovaPE.Sprint6.Task6.V26
 {
     partial class FormMain
     {
