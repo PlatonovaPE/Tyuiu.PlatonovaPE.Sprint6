@@ -4,24 +4,26 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task6.V26.Lib
 {
     public class DataService : ISprint6Task6V26
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
+            string resStr = "";
+
+            using (StreamReader reader = new StreamReader(path))
             {
-                string resStr = "";
+                string line;
 
-                using (StreamReader reader = new StreamReader(path))
+                while ((line = reader.ReadLine()) != null)
                 {
-                    string line;
+                    var temp = line.Split(' ');
 
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        var temp = line.Split(' ');
-
-                        resStr += temp[^1] + " ";
-                    }
-                    return resStr;
+                    resStr += temp[^1] + " ";
                 }
+                return resStr;
+
+
             }
+
         }
+
     }
 }
