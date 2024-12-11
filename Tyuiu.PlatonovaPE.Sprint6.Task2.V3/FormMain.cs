@@ -25,22 +25,20 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task2.V3
                 int len = ds.GetMassFunction(startStep, stopStep).Length;
                 double[] array = new double[len];
                 array = ds.GetMassFunction(startStep, stopStep);
-                this.chartResult.Titles.Add("Ãðàôèê ôóíêöèè F(x)");
-                this.chartResult.ChartAreas[0].AxisX.Title = "Îñü Õ";
-                this.chartResult.ChartAreas[0].AxisY.Title = "Îñü Y";
+                
                 for (int i = 0; i < len - 1; i++)
                 {
                     this.dataGridView1.Rows.Add(Convert.ToString(startStep), Convert.ToString(array[i]));
-                    this.chartResult.Series[0].Points.AddXY(startStep, array[i]);
+                  
                     startStep++;
                 }
             }
-            catch { MessageBox.Show("Ââåäåíû íåâåðíûå äàííûå", "Îøèáêà", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            catch { MessageBox.Show("-", "-", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void buttonhelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Òàñê 0 âûïîëíèë  ñòóäåíò ãðóïïû ÀÑÎèÓÁ-24-1 Êîìàðîâà Ìàðãàðèòà Âàñèëüåâíà", "Ñîîáùåíèå", MessageBoxButtons.OK);
+            MessageBox.Show("-", "-", MessageBoxButtons.OK);
         }
 
         private void buttonDone_MouseEnter(object sender, EventArgs e)

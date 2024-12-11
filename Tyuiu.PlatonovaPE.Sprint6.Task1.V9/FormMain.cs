@@ -33,13 +33,13 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task1.V9
             }
             catch
             {
-                MessageBox.Show("Ââåäåíû íåâåðíûå äàííûå", "Îøèáêà", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("-", "-", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void button_Spr_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Òàñê 1 âûïîëíèë ñòóäåíò ãðóïïû ÈÁÊÑá-24-1 Êîêîóëèí Èâàí Âëàäèìèðîâè÷", "Ñîîáùåíèå", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("-÷", "-", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -41,18 +41,7 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task5.V10
                 dataGridView.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dataGridView.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-                // ôóíêöèÿ
-                chartFunction.Series[0].Points.Clear();
-
-                this.chartFunction.ChartAreas[0].AxisX.Title = "Îñü X";
-                this.chartFunction.ChartAreas[0].AxisY.Title = "Îñü Y";
-
-                count = 0;
-                foreach (double num in nums)
-                {
-                    chartFunction.Series[0].Points.AddXY(count, num);
-                    count++;
-                }
+               
             }
             catch
             {

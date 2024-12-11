@@ -32,8 +32,6 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task2.V3
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             groupBoxTask = new GroupBox();
             labelTask = new Label();
             pictureBoxTask = new PictureBox();
@@ -43,7 +41,7 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task2.V3
             labelStop = new Label();
             textBoxStart = new TextBox();
             groupBoxResult = new GroupBox();
-            chartResult = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            
             dataGridView1 = new DataGridView();
             ColumnX = new DataGridViewTextBoxColumn();
             ColumnF = new DataGridViewTextBoxColumn();
@@ -54,7 +52,7 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task2.V3
             ((System.ComponentModel.ISupportInitialize)pictureBoxTask).BeginInit();
             groupBoxWrite.SuspendLayout();
             groupBoxResult.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)chartResult).BeginInit();
+           
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -134,7 +132,7 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task2.V3
             // 
             // groupBoxResult
             // 
-            groupBoxResult.Controls.Add(chartResult);
+            
             groupBoxResult.Controls.Add(dataGridView1);
             groupBoxResult.Location = new Point(470, 29);
             groupBoxResult.Name = "groupBoxResult";
@@ -142,20 +140,7 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task2.V3
             groupBoxResult.TabIndex = 0;
             groupBoxResult.TabStop = false;
             groupBoxResult.Text = "Результат:";
-            // 
-            // chartResult
-            // 
-            chartArea1.Name = "ChartArea1";
-            chartResult.ChartAreas.Add(chartArea1);
-            chartResult.Location = new Point(245, 13);
-            chartResult.Name = "chartResult";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Name = "Series1";
-            chartResult.Series.Add(series1);
-            chartResult.Size = new Size(308, 266);
-            chartResult.TabIndex = 1;
-            chartResult.Text = "chartResult";
+            
             // 
             // dataGridView1
             // 
@@ -213,14 +198,14 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task2.V3
             Controls.Add(groupBoxResult);
             Controls.Add(groupBoxTask);
             Name = "FormMain";
-            Text = "Спринт 6 | Таск 2 | Вариант 3 | Комарова М.В.";
+            Text = "Спринт 6 | Таск 2 | Вариант 3 | Платонова П.Е.";
             groupBoxTask.ResumeLayout(false);
             groupBoxTask.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxTask).EndInit();
             groupBoxWrite.ResumeLayout(false);
             groupBoxWrite.PerformLayout();
             groupBoxResult.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)chartResult).EndInit();
+            
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -242,6 +227,6 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task2.V3
         private DataGridViewTextBoxColumn ColumnX;
         private DataGridViewTextBoxColumn ColumnF;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartResult;
+        
     }
 }

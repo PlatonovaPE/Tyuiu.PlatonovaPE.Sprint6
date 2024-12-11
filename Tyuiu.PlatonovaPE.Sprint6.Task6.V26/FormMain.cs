@@ -11,24 +11,34 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task6.V26
         }
         string openFilePath;
         DataService ds = new DataService();
-        private void buttonOpen_ZEO_Click(object sender, EventArgs e)
+        private void buttonOpen_PPE_Click(object sender, EventArgs e)
         {
-            openFileDialogTask_ZEO.ShowDialog();
-            openFilePath = openFileDialogTask_ZEO.FileName;
-            textBoxInPut_ZEO.Text = File.ReadAllText(openFilePath);
-            groupBoxOutPut_ZEO.Text = groupBoxOutPut_ZEO.Text + " " + openFileDialogTask_ZEO.FileName;
-            buttonDoIt_ZEO.Enabled = true;
+            openFileDialogTask_PPE.ShowDialog();
+            openFilePath = openFileDialogTask_PPE.FileName;
+            textBoxInPut_PPE.Text = File.ReadAllText(openFilePath);
+            groupBoxOutPut_PPE.Text = groupBoxOutPut_PPE.Text + " " + openFileDialogTask_PPE.FileName;
+            buttonDoIt_PPE.Enabled = true;
         }
 
-        private void buttonDoIt_ZEO_Click(object sender, EventArgs e)
+        private void buttonDoIt_PPE_Click(object sender, EventArgs e)
         {
-            textBoxOutPut_ZEO.Text = ds.CollectTextFromFile(openFilePath);
+            textBoxOutPut_PPE.Text = ds.CollectTextFromFile(openFilePath);
         }
 
 
-        private void panelInPut_ZEO_Paint(object sender, PaintEventArgs e)
+        private void panelInPut_PPE_Paint(object sender, PaintEventArgs e)
         {
             //
+        }
+
+        private void textBoxInPut_PPE_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonHelp_PPE_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

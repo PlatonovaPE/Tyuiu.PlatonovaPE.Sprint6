@@ -26,21 +26,21 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task4.V16
             }
             catch (FormatException)
             {
-                MessageBox.Show("Ïîæàëóéñòà, ââåäèòå êîððåêòíîå öåëîå ÷èñëî.");
+                MessageBox.Show(".");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ïðîèçîøëà îøèáêà: {ex.Message}");
+                MessageBox.Show($": {ex.Message}");
             }
         }
         private void buttonSave_Click(object sender, EventArgs e)
         {
             try
             {
-                string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask4V16.txt" });
+                string path = Path.Combine(new string[] { Path.GetTempPath(), "-" });
                 File.WriteAllText(path, TextBoxIn.Text);
 
-                DialogResult dialogResult = MessageBox.Show("Ôàéë\n" + path + " ñîõðàíåí óñïåøíî!\nÎòêðûòü åãî â áëîêíîòå?", "Ñîîáùåíèå", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult dialogResult = MessageBox.Show("Ôàéë\n" + path + " ?", "-", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                 if (dialogResult == DialogResult.Yes)
                 {
@@ -52,13 +52,13 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task4.V16
             }
             catch
             {
-                MessageBox.Show("Cáîé ïðè ñîõðàíèè ôàéëà", "Îøèáêà", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("-", "-", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Task 4 âûïîëíèëà ñòóäåíò ãðóïïû ÏÊÒÁ-24-1 Êîðîáåéíèêîâà Äàðüÿ Äåíèñîâíà", "Cîîáùåíèå", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Task 4 ", "-", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void FormMain_Load(object sender, EventArgs e)

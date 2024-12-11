@@ -25,36 +25,36 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task3.V28
             InitializeComponent();
         }
 
-        private void buttonDone_VAA_Click(object sender, EventArgs e)
+        private void buttonDone_PPE_Click(object sender, EventArgs e)
         {
             int[,] res = ds.Calculate(mtrx);
 
             int rows = res.GetUpperBound(0) + 1;
             int columns = res.Length / rows;
 
-            dataGridViewRes_VAA.ColumnCount = columns;
-            dataGridViewRes_VAA.RowCount = rows;
+            dataGridViewRes_PPE.ColumnCount = columns;
+            dataGridViewRes_PPE.RowCount = rows;
 
             for (int i = 0; i < columns; i++)
             {
-                dataGridViewRes_VAA.Columns[i].Width = 25;
+                dataGridViewRes_PPE.Columns[i].Width = 25;
             }
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    dataGridViewRes_VAA.Rows[i].Cells[j].Value = Convert.ToString(res[i, j]);
+                    dataGridViewRes_PPE.Rows[i].Cells[j].Value = Convert.ToString(res[i, j]);
                 }
             }
         }
 
         private void buttonHelp_VAA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 1 выполнина студентка группы ИИПб-23-2 Варова Ангелина Александровна", "Сообщение", MessageBoxButtons.OK);
+            MessageBox.Show("Таск 1 выполнина студентка группы ИСПб-24-1 Платонова Полина Евгеньвна", "Сообщение", MessageBoxButtons.OK);
         }
 
-        private void groupBoxTask_VAA_Enter(object sender, EventArgs e)
+        private void groupBoxTask_PPE_Enter(object sender, EventArgs e)
         {
             //
         }
@@ -64,24 +64,24 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task3.V28
             int rows = mtrx.GetUpperBound(0) + 1;
             int columns = mtrx.Length / rows;
 
-            dataGridViewMatrix_VAA.ColumnCount = columns;
-            dataGridViewMatrix_VAA.RowCount = rows;
+            dataGridViewMatrix_PPE.ColumnCount = columns;
+            dataGridViewMatrix_PPE.RowCount = rows;
 
             for (int i = 0; i < columns; i++)
             {
-                dataGridViewMatrix_VAA.Columns[i].Width = 25;
+                dataGridViewMatrix_PPE.Columns[i].Width = 25;
             }
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    dataGridViewMatrix_VAA.Rows[i].Cells[j].Value = Convert.ToString(mtrx[i, j]);
+                    dataGridViewMatrix_PPE.Rows[i].Cells[j].Value = Convert.ToString(mtrx[i, j]);
                 }
             }
         }
 
-        private void dataGridViewRes_VAA_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewRes_PPE_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //
         }
