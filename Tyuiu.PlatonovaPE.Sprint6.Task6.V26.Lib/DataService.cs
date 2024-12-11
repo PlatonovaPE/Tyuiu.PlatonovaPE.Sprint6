@@ -18,7 +18,7 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task6.V26.Lib
 
                     resStr += temp[^1] + " ";
                 }
-                return resStr;
+                return resStr.Trim();
 
 
             }
