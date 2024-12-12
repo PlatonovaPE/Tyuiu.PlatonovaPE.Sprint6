@@ -10,7 +10,7 @@
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
-       
+
 
         #region Windows Form Designer generated code
 
@@ -21,7 +21,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             groupBoxOutPutData_PPE = new GroupBox();
             dataGridViewOutMatrix_PPE = new DataGridView();
             dataGridViewInMatrix_PPE = new DataGridView();
@@ -40,41 +39,50 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewInMatrix_PPE).BeginInit();
             groupBoxTask_PPE.SuspendLayout();
             groupBoxMenu_PPE.SuspendLayout();
-            
+            SuspendLayout();
             // 
             // groupBoxOutPutData_PPE
             // 
             groupBoxOutPutData_PPE.Controls.Add(dataGridViewOutMatrix_PPE);
             groupBoxOutPutData_PPE.Controls.Add(dataGridViewInMatrix_PPE);
             groupBoxOutPutData_PPE.Dock = DockStyle.Bottom;
-            groupBoxOutPutData_PPE.Location = new Point(0, 177);
+            groupBoxOutPutData_PPE.Location = new Point(0, 236);
+            groupBoxOutPutData_PPE.Margin = new Padding(3, 4, 3, 4);
             groupBoxOutPutData_PPE.Name = "groupBoxOutPutData_PPE";
-            groupBoxOutPutData_PPE.Size = new Size(858, 352);
+            groupBoxOutPutData_PPE.Padding = new Padding(3, 4, 3, 4);
+            groupBoxOutPutData_PPE.Size = new Size(981, 469);
             groupBoxOutPutData_PPE.TabIndex = 5;
             groupBoxOutPutData_PPE.TabStop = false;
             // 
             // dataGridViewOutMatrix_PPE
             // 
             dataGridViewOutMatrix_PPE.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewOutMatrix_PPE.Location = new Point(409, 22);
+            dataGridViewOutMatrix_PPE.Location = new Point(467, 29);
+            dataGridViewOutMatrix_PPE.Margin = new Padding(3, 4, 3, 4);
             dataGridViewOutMatrix_PPE.Name = "dataGridViewOutMatrix_PPE";
-            dataGridViewOutMatrix_PPE.Size = new Size(435, 314);
+            dataGridViewOutMatrix_PPE.RowHeadersWidth = 51;
+            dataGridViewOutMatrix_PPE.Size = new Size(497, 419);
             dataGridViewOutMatrix_PPE.TabIndex = 1;
+            dataGridViewOutMatrix_PPE.CellContentClick += dataGridViewOutMatrix_PPE_CellContentClick;
             // 
             // dataGridViewInMatrix_PPE
             // 
             dataGridViewInMatrix_PPE.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewInMatrix_PPE.Location = new Point(15, 22);
+            dataGridViewInMatrix_PPE.Location = new Point(17, 29);
+            dataGridViewInMatrix_PPE.Margin = new Padding(3, 4, 3, 4);
             dataGridViewInMatrix_PPE.Name = "dataGridViewInMatrix_PPE";
-            dataGridViewInMatrix_PPE.Size = new Size(372, 314);
+            dataGridViewInMatrix_PPE.RowHeadersWidth = 51;
+            dataGridViewInMatrix_PPE.Size = new Size(425, 419);
             dataGridViewInMatrix_PPE.TabIndex = 0;
             // 
             // groupBoxTask_PPE
             // 
             groupBoxTask_PPE.Controls.Add(textBoxTask_PPE);
-            groupBoxTask_PPE.Location = new Point(6, 106);
+            groupBoxTask_PPE.Location = new Point(7, 141);
+            groupBoxTask_PPE.Margin = new Padding(3, 4, 3, 4);
             groupBoxTask_PPE.Name = "groupBoxTask_PPE";
-            groupBoxTask_PPE.Size = new Size(825, 72);
+            groupBoxTask_PPE.Padding = new Padding(3, 4, 3, 4);
+            groupBoxTask_PPE.Size = new Size(943, 96);
             groupBoxTask_PPE.TabIndex = 4;
             groupBoxTask_PPE.TabStop = false;
             groupBoxTask_PPE.Text = "Условие";
@@ -83,13 +91,13 @@
             // 
             textBoxTask_PPE.BackColor = SystemColors.Control;
             textBoxTask_PPE.Dock = DockStyle.Fill;
-            textBoxTask_PPE.Location = new Point(3, 19);
+            textBoxTask_PPE.Location = new Point(3, 24);
+            textBoxTask_PPE.Margin = new Padding(3, 4, 3, 4);
             textBoxTask_PPE.Multiline = true;
             textBoxTask_PPE.Name = "textBoxTask_PPE";
             textBoxTask_PPE.ReadOnly = true;
-            textBoxTask_PPE.Size = new Size(819, 50);
+            textBoxTask_PPE.Size = new Size(937, 68);
             textBoxTask_PPE.TabIndex = 0;
-            textBoxTask_PPE.Text = resources.GetString("textBoxTask_PPE.Text");
             // 
             // groupBoxMenu_PPE
             // 
@@ -99,17 +107,20 @@
             groupBoxMenu_PPE.Controls.Add(buttonOpenFile_PPE);
             groupBoxMenu_PPE.Dock = DockStyle.Top;
             groupBoxMenu_PPE.Location = new Point(0, 0);
+            groupBoxMenu_PPE.Margin = new Padding(3, 4, 3, 4);
             groupBoxMenu_PPE.Name = "groupBoxMenu_PPE";
-            groupBoxMenu_PPE.Size = new Size(858, 100);
+            groupBoxMenu_PPE.Padding = new Padding(3, 4, 3, 4);
+            groupBoxMenu_PPE.Size = new Size(981, 133);
             groupBoxMenu_PPE.TabIndex = 3;
             groupBoxMenu_PPE.TabStop = false;
             // 
             // buttonSaveFile_PPE
             // 
             buttonSaveFile_PPE.Enabled = false;
-            buttonSaveFile_PPE.Location = new Point(184, 22);
+            buttonSaveFile_PPE.Location = new Point(210, 29);
+            buttonSaveFile_PPE.Margin = new Padding(3, 4, 3, 4);
             buttonSaveFile_PPE.Name = "buttonSaveFile_PPE";
-            buttonSaveFile_PPE.Size = new Size(88, 62);
+            buttonSaveFile_PPE.Size = new Size(101, 83);
             buttonSaveFile_PPE.TabIndex = 3;
             buttonSaveFile_PPE.Text = "Сохранить";
             buttonSaveFile_PPE.UseVisualStyleBackColor = true;
@@ -117,20 +128,22 @@
             // 
             // buttonHelp_PPE
             // 
-            buttonHelp_PPE.Location = new Point(777, 22);
+            buttonHelp_PPE.Location = new Point(888, 29);
+            buttonHelp_PPE.Margin = new Padding(3, 4, 3, 4);
             buttonHelp_PPE.Name = "buttonHelp_PPE";
-            buttonHelp_PPE.Size = new Size(75, 62);
+            buttonHelp_PPE.Size = new Size(86, 83);
             buttonHelp_PPE.TabIndex = 2;
             buttonHelp_PPE.Text = "Справка";
             buttonHelp_PPE.UseVisualStyleBackColor = true;
-           
+            buttonHelp_PPE.Click += buttonHelp_PPE_Click;
             // 
             // buttonDone_PPE
             // 
             buttonDone_PPE.Enabled = false;
-            buttonDone_PPE.Location = new Point(93, 22);
+            buttonDone_PPE.Location = new Point(106, 29);
+            buttonDone_PPE.Margin = new Padding(3, 4, 3, 4);
             buttonDone_PPE.Name = "buttonDone_PPE";
-            buttonDone_PPE.Size = new Size(85, 62);
+            buttonDone_PPE.Size = new Size(97, 83);
             buttonDone_PPE.TabIndex = 1;
             buttonDone_PPE.Text = "Выполнить";
             buttonDone_PPE.UseVisualStyleBackColor = true;
@@ -138,9 +151,10 @@
             // 
             // buttonOpenFile_PPE
             // 
-            buttonOpenFile_PPE.Location = new Point(6, 22);
+            buttonOpenFile_PPE.Location = new Point(7, 29);
+            buttonOpenFile_PPE.Margin = new Padding(3, 4, 3, 4);
             buttonOpenFile_PPE.Name = "buttonOpenFile_PPE";
-            buttonOpenFile_PPE.Size = new Size(81, 62);
+            buttonOpenFile_PPE.Size = new Size(93, 83);
             buttonOpenFile_PPE.TabIndex = 0;
             buttonOpenFile_PPE.Text = "Загрузить";
             buttonOpenFile_PPE.UseVisualStyleBackColor = true;
@@ -152,13 +166,14 @@
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(858, 529);
+            ClientSize = new Size(981, 705);
             Controls.Add(groupBoxOutPutData_PPE);
             Controls.Add(groupBoxTask_PPE);
             Controls.Add(groupBoxMenu_PPE);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormMain";

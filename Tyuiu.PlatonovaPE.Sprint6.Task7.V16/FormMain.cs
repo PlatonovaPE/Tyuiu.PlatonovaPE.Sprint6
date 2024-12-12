@@ -159,5 +159,15 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task7.V16
             }
         }
 
+        private void dataGridViewOutMatrix_PPE_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void buttonHelp_PPE_Click(object sender, EventArgs e)
+        {
+            FormAbout.formAbout = new FormAbout();
+            FormAbout.ShowDialog();
+        }
     }
 }
