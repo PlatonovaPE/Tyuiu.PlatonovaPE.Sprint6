@@ -28,12 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormAbout";
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.IMG_8655;
+            pictureBox1.Location = new Point(39, 33);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(256, 291);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(365, 88);
+            label1.Name = "label1";
+            label1.Size = new Size(354, 140);
+            label1.TabIndex = 1;
+            label1.Text = "Разработчик Платонова Полина Евгеньеdна\r\nгруппа ИСПб-24-1\r\n\r\nТюменский Индустриальный Университет \r\nВысшая школа цифровых технологий\r\n\r\nВнутренне имя Tyuiu.PlatonovaPE.Sprint6.Task6.V26\r\n";
+            // 
+            // FormAbout
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Name = "FormAbout";
+            Text = "FormAbout";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private PictureBox pictureBox1;
+        private Label label1;
     }
 }

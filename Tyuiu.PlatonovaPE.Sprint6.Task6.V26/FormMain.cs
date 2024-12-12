@@ -38,7 +38,8 @@ namespace Tyuiu.PlatonovaPE.Sprint6.Task6.V26
 
         private void buttonHelp_PPE_Click(object sender, EventArgs e)
         {
-
+            FormAbout.formAbout = new FormAbout();
+            FormAbout.ShowDialog();
         }
     }
 }
